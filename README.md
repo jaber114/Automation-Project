@@ -3,6 +3,9 @@
 ✅ This is a testing automation demo project that tests a real site called: www.automation.co.il
 
 # 📖 Overview
+  This repository contains a comprehensive automated testing project built with Python, Pytest, and Allure Reports. The project follows the Page Object Model (POM) design pattern for a modular and maintainable test suite.
+
+
 
 
 # 📑 Technologies & Skill & Features
