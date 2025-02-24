@@ -4,6 +4,8 @@
 
 # 📖 Overview
   This repository contains a comprehensive automated testing project built with Python, Pytest, and Allure Reports. The project follows the Page Object Model (POM) design pattern for a modular and maintainable test suite.
+  ![image](https://github.com/user-attachments/assets/c636ed93-26f7-4683-8f8b-b663093c0558)
+
 
 
 
