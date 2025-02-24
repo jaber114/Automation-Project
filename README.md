@@ -6,16 +6,28 @@
 
 
 # 📑 Technologies & Skill & Features
-<table>
-<tr>
-<td width="33%">
-The quick brown fox jumps over the lazy dog.
-</td>
-<td width="33%">
-The quick brown fox jumps over the lazy dog.
-</td>
-<td width="33%">
-The quick brown fox jumps over the lazy dog.
-</td>
-</tr>
-</table>
+| Technology             | Description                                                                                      |
+|------------------------|--------------------------------------------------------------------------------------------------|
+| **Python**               | Python is a high-level, versatile programming language known for its readability, simplicity, and wide range of applications in web development, data analysis, automation, and more. |
+| **Pytest**             | Pytest is a popular Python testing framework that simplifies writing and running tests with features like automatic test discovery, fixtures, and powerful assertions.|
+| **Selenium WebDriver** | The project includes Selenium WebDriver for automating browser interactions.                     |
+| **Page Object Model (POM)** | The project follows the POM design pattern, enhancing test maintainability and reusability by separating page elements and actions. |
+| **Allure Reports**     | Test results are documented using Allure Reports, providing a clear and interactive visualization of test execution. |
+| **Jenkins**            | Continuous integration and continuous delivery (CI/CD) platform for automated builds and deployments. |
+| **Git**            | Git is a distributed version control system that allows multiple developers to track changes in code, collaborate efficiently, and manage project history. |
+
+
+
+# 🚀 Getting Started
+## Clone the Repository:
+   ```bash
+     git clone https://github.com/jaber114/Automation-Project.git
+     ```
+   
+
+
+
+
+
+
+Thanks for visiting my GitHub profile! 😊 Jaber Rammal
