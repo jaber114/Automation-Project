@@ -21,6 +21,14 @@
 | **Jenkins**            | Continuous integration and continuous delivery (CI/CD) platform for automated builds and deployments. |
 | **Git**            | Git is a distributed version control system that allows multiple developers to track changes in code, collaborate efficiently, and manage project history. |
 
+# 📊 Reports
+    ```bash
+     allure serve allure-results
+     ```
+# 📊 Reports Examples
+
+
+
 
 
 # 🚀 Getting Started
