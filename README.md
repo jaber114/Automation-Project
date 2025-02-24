@@ -1,6 +1,6 @@
 # 💻 My Automation Project
 
-✅ This is a testing automation demo project that tests a real site called: www.automation.co.il
+✅ This is a testing automation demo project that tests a real site called:(https://tutorialsninja.com/demo/index.php)
 
 # 📖 Overview
   This repository contains a comprehensive automated testing project built with Python, Pytest, and Allure Reports. The project follows the Page Object Model (POM) design pattern for a modular and maintainable test suite.
@@ -36,6 +36,8 @@
    ```bash
      git clone https://github.com/jaber114/Automation-Project.git
      ```
+# 📁 Project Structure
+
    
 
 
