@@ -42,7 +42,7 @@
 # 🚀 Getting Started
 ## Clone the Repository:
    ```bash
-     git clone https://github.com/jaber114/Automation-Project.git
+     git clone [https://github.com/jaber114/Automation-Project.git](https://github.com/jaber114/Automation-Project/tree/master)
      
 
    
