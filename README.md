@@ -30,26 +30,9 @@
 
 ![image](https://github.com/user-attachments/assets/c0261cb3-35c2-4525-85ea-3466a9344bbd)
 
-
-
-
-
-
-
-
-
-
 # 🚀 Getting Started
 ## Clone the Repository:
    ```bash
      git clone [https://github.com/jaber114/Automation-Project.git](https://github.com/jaber114/Automation-Project/tree/master)
      
-
-   
-
-
-
-
-
-
 Thanks for visiting my GitHub profile! 😊 Jaber Rammal
