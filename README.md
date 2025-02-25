@@ -26,6 +26,14 @@
      allure serve allure-results
      ```
 # 📊 Reports Examples
+![image](https://github.com/user-attachments/assets/027e661e-3443-48b4-93e0-38ec26570817)
+
+![image](https://github.com/user-attachments/assets/c0261cb3-35c2-4525-85ea-3466a9344bbd)
+
+
+
+
+
 
 
 
@@ -35,8 +43,7 @@
 ## Clone the Repository:
    ```bash
      git clone https://github.com/jaber114/Automation-Project.git
-     ```
-# 📁 Project Structure
+     
 
    
 
