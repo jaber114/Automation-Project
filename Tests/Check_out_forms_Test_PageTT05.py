@@ -76,7 +76,7 @@ class Test_checkout_forms():
         with allure.step("Confirm Order"):
             Checkout.delay(4)
             Checkout.confirm_order()
-            Checkout.delay(54)
+            Checkout.delay(6)
             if Checkout.confirm_order_validation():
                 assert True
             assert False
