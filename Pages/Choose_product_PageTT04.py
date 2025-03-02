@@ -36,12 +36,13 @@ class Choose_product(BasePage):
     Write_review_button = (By.CSS_SELECTOR,"#content > div:nth-child(1) > div.col-sm-4 > div.rating > p > a:nth-child(7)")
     rating_error_msg=(By.CSS_SELECTOR,"#form-review > div.alert.alert-danger.alert-dismissible")
     submit_rating_button = (By.CSS_SELECTOR,"#button-review")
+    dropdown=(By.CSS_SELECTOR,".dropdown")
     add_to_wishlist=(By.CSS_SELECTOR,"#content > div > div.col-sm-4 > div.btn-group > button:nth-child(1)")
     def choose_category(self,category):
         if category in self.category_names:
             if category=="Desktops" or "MP3 Players" or "Laptops & Notebooks" or "Components":
-             self.choose_with_dropdown(self.cat_names, category, self.Showall_products)
-            if category=="Cameras" or "Tablets" or "Software" or "Phones & PDAs":
+             self.choose_with_dropdown(self.dropdown, category)
+            elif category=="Cameras" or "Tablets" or "Software" or "Phones & PDAs":
                self.choose_without_dropdown(self.cat_names,category)
         else:
             self.driver.execute_script("alert('you choose categorie that is not exist');")

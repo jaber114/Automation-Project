@@ -139,38 +139,89 @@ class BasePage:
 
     def choose_without_dropdown(self,path,name):
         names=self.driver.find_elements(*path)
+        print("without drop down")
         try:
          for i in names:
             if i.text==name:
                 i.click()
-        except StaleElementReferenceException:
+        except Exception:
            print("")
 
-    def choose_with_dropdown(self,path,catname,see_allbtn):
-        see_all=self.driver.find_elements(*see_allbtn)
-        urls=["https://tutorialsninja.com/demo/index.php?route=product/category&path=34","https://tutorialsninja.com/demo/index.php?route=product/category&path=20","https://tutorialsninja.com/demo/index.php?route=product/category&path=18","https://tutorialsninja.com/demo/index.php?route=product/category&path=25"]
-        cat_names=self.driver.find_elements(*path)
+    def choose_with_dropdown(self, catname, category):
+        self.delay(5)
+        print("with dropdown")
         try:
-         for i in cat_names:
-            if i.text==catname:
-                self.delay(4)
-                url = i.get_attribute('href')
-                if url in urls:
-                    self.delay(4)
-                    element = self.driver.find_element(By.CSS_SELECTOR, f"a[href='{url}']")
-                    self.delay(4)
-                    # self.driver.execute_script("arguments[0].click();", element)
-                    element.click()
-                    self.delay(4)
-                    for k in see_all:
-                        if k.text=="Show All"+""+catname:
-                            self.delay(4)
-                            k.click()
-                            break
-        except StaleElementReferenceException:
-            print("")
-        except ElementClickInterceptedException:
-            print("")
+            cat_links = self.driver.find_elements(*catname)
+
+            for i in cat_links:
+                self.delay(5)
+
+                if i.text == category:
+                    self.delay(5)
+                    i.click()  # Click on the category
+                    self.delay(5)  # Wait for the page to load after click
+
+                    # Look for the 'Show All' button within the clicked category
+                    show_allbutton = i.find_elements(By.CSS_SELECTOR, ".see-all")
+                    self.delay(5)
+
+                    if show_allbutton:
+                        for j in show_allbutton:
+                            if j.text == "Show All" + category:
+                                # Check if the "Show All" button is visible and clickable
+                                if j.is_displayed() and j.is_enabled():
+                                    j.click()  # Click the 'Show All' button
+                                    self.delay(3)  # Wait for the action to be processed
+                                break  # Break after the first valid click (if applicable)
+                    break  # Exit the loop once the correct category is found and clicked
+
+        except Exception:
+            return
+
+    # def choose_with_dropdown(self,catname,category):
+    #   try:
+    #     cat_links=self.driver.find_elements(*catname)
+    #     for i in cat_links:
+    #         if i.text==category:
+    #             i.click()
+    #             self.delay(5)
+    #             show_allbutton=i.find_elements(By.CSS_SELECTOR,".see-all")
+    #             for j in show_allbutton:
+    #                 if j.text=="Show All"+category:
+    #                     j.click()
+    #                     break
+
+      # except Exception:
+      #     print("")
+
+
+    # def choose_with_dropdown(self,path,catname,see_allbtn):
+    #     see_all=self.driver.find_elements(*see_allbtn)
+    #     urls=["https://tutorialsninja.com/demo/index.php?route=product/category&path=34","https://tutorialsninja.com/demo/index.php?route=product/category&path=20","https://tutorialsninja.com/demo/index.php?route=product/category&path=18","https://tutorialsninja.com/demo/index.php?route=product/category&path=25"]
+    #     cat_names=self.driver.find_elements(*path)
+    #     try:
+    #      for i in cat_names:
+    #         if i.text==catname:
+    #             self.delay(4)
+    #             url = i.get_attribute('href')
+    #             if url in urls:
+    #                 self.delay(4)
+    #                 element = self.driver.find_element(By.CSS_SELECTOR, f"a[href='{url}']")
+    #                 self.delay(4)
+    #                 # self.driver.execute_script("arguments[0].click();", element)
+    #                 element.click()
+    #                 self.delay(4)
+    #                 for k in see_all:
+    #                     if k.text=="Show All"+""+catname:
+    #                         self.delay(4)
+    #                         print("yes")
+    #                         k.click()
+    #                         return
+    #
+    #     except StaleElementReferenceException:
+    #         print("")
+    #     except ElementClickInterceptedException:
+    #          return
 
 
 

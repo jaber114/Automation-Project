@@ -47,11 +47,11 @@ class Test_checkout_forms():
             Login.loginbtn()
         with allure.step("Choose product category"):
             product.delay(5)
-            product.choose_category("MP3 Players")
+            product.choose_category("Desktops")
             product.delay(5)
         with allure.step("Choose product"):
             product.delay(5)
-            product.choose_product("iPod Touch")
+            product.choose_product("HP LP3065")
         with allure.step("add to cart"):
             product.delay(5)
             product.add_to_cart()
@@ -69,7 +69,7 @@ class Test_checkout_forms():
             Checkout.delivery_details("14250")
         with allure.step("Delivery method"):
             Checkout.delay(4)
-            Checkout.delivery_method("dakspdksaodosajdjosaojdsad")
+            Checkout.delivery_method("UPS Delivery method")
         with allure.step("Payment method"):
             Checkout.delay(4)
             Checkout.Payment_method("Method one")
